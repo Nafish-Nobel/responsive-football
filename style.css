@@ -75,7 +75,7 @@ article, .players{
 }
 article img{
     margin: 0px 15px 0px 15px;
-    width: 330px;
+    width: 320px;
     height: 260px;
 }
 
@@ -283,3 +283,88 @@ span img{
 
 /* -------------nn--------Media Queries-----------nn---- */
 
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    body{
+        width: 100%;
+    }
+    .content{
+        flex-direction: column;
+        width:415px;
+    }
+    .copa-section h1{
+        font-size:40px;
+        align-self: center;
+    }
+    .content-highlights{
+        flex-direction: column;
+    }
+    article{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:50px ;
+        justify-content: space-evenly;
+    }
+    .Highlights{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .premier-l{
+        font-size:35px;
+    }
+    
+    .table-content{
+        flex-direction: column;
+    }
+    .FIFA-PARTNER{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer img{
+        width: 150px;
+    }
+}
+
+/* tablete devices */
+ @media only screen and (min-width:688px) and (max-width:992px){
+    body{
+        width: 100%;
+    }
+    .content{
+        flex-direction: column;
+        width: 470px;
+    }
+    .copa-section h1{
+        font-size:30px;
+        align-self: center;
+    }
+    .content-highlights{
+        flex-direction: column;
+        height: 10px;
+    }
+    article{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 110px ;
+        justify-content: space-be;
+    }
+    .Highlights{
+        grid-template-columns: repeat(1,1fr);
+        height: 0px;
+    }
+    .premier-l{
+        font-size:35px;
+
+    }
+    
+    .table-content{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .FIFA-PARTNER{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+    }
+    .footer img{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 10px;
+    }
+} 
