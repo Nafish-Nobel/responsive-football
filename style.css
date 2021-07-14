@@ -11,6 +11,7 @@ body{
     
 }
 /* -----------nn-----------/header/-------nn----- */
+
 .content{ 
     display: flex;
     align-items: center;
@@ -48,6 +49,81 @@ body{
 
 /* -----nn--------------/main/-----------nn-------- */
 
+/* article */
+
+article{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap:26px;
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+    margin: 0px 50px;
+    
+
+    
+}
+article, .players{
+    padding: 20px;
+    background: #FFFFFF;
+    
+}
+.players{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+article img{
+    margin: 0px 15px 0px 15px;
+    width: 330px;
+    height: 260px;
+}
+
+article h3{
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+}
+
+article p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+/* article section end */
+
+/* highlight section css start */
+#highlights h1{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+#highlights p{
+    margin: 20px 0 30px;
+}
+
+#highlights .container{
+    color: black;
+}
+
+/* highlight section css start */
+#highlights h1{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+#highlights p{
+    margin: 20px 0 30px;
+}
+
+#highlights .container{
+    color: black;
+}
+
 /* Highlights */
 .content-highlights{
     color: #FFFFFF;
@@ -61,9 +137,8 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    /* margin: 8px 0px; */
 }
-article{
+p{
     color: #6C6C6C;
     font-size: 16px;
     line-height: 28px;
@@ -128,7 +203,7 @@ h2{
 
 .b {
     text-align: center;
-    background-color: teal;
+    background-color: #5249d4;
     color: rgb(248, 245, 245);
     font-size: 15px;
     font-style: bold;
@@ -205,3 +280,6 @@ span img{
     height: 30px;
     width: 30px;
 }
+
+/* -------------nn--------Media Queries-----------nn---- */
+
